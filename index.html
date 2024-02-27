@@ -9,7 +9,8 @@
     <title>Touraria</title>
   </head>
   <body class="container mx-auto">
-    <header>
+    <header class="mx-2">
+      <!-- NavBar -->
       <nav class="font-comicNeue">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -42,10 +43,14 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl font-medium text-center">Touraria</a>
+            <a class="btn btn-ghost text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-medium text-center"
+              >Touraria</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-lg font-normal opacity-70 text-center">
+            <ul
+              class="menu menu-horizontal px-1 text-lg font-normal opacity-70 text-center"
+            >
               <li><a>Home</a></li>
               <li>
                 <a>About</a>
@@ -55,11 +60,149 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn bg-[#22bbcc1a] text-primaryColor text-lg font-bold text-center ">Bus  <img src="./assets/icons/bus-icon.svg" alt="bus"></a>
+            <a
+              class="btn bg-[#22bbcc1a] text-primaryColor text-lg font-bold text-center"
+              >Bus <img src="./assets/icons/bus-icon.svg" alt="bus"
+            /></a>
           </div>
         </div>
       </nav>
-      <section class="banner"></section>
+      <!-- Banner -->
+      <section
+        class="banner text-center rounded-3xl font-inter"
+        style="
+          background-image: url('./assets/img/banner.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        "
+      >
+        <!-- Banner contents -->
+        <div class="flex flex-col items-center justify-center">
+          <div
+            class="pt-20 pb-36 mt-7 flex flex-col items-center justify-center"
+          >
+            <div class="text-white pb-10">
+              <h1 class="mb-5 text-3xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-medium font-comicNeue">
+                Seamless Travel Experience with<br />
+                <span class="text-primaryColor">Touraria</span>
+              </h1>
+              <p class="md:text-lg lg:text-lg 2xl:text-lg xl:text-lg text-base  max-w-xs  md:max-w-2xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl mx-auto">
+                Discover limitless destinations with Touraria, your premier
+                e-ticketing platform for hassle-free journeys worldwide.
+              </p>
+            </div>
+            <button
+              class="btn font-comicNeue text-xl rounded-xl px-7 font-bold text-dark bg-primaryColor border-none"
+            >
+              Buy Tickets
+            </button>
+          </div>
+          <!-- Banner Cards -->
+          <div
+            class="gap-6 items-center justify-center relative -bottom-20 hidden lg:flex xl:flex 2xl:flex"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <!-- First -->
+              <div
+                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+              >
+                <img
+                  src="./assets/icons/people.svg"
+                  alt=""
+                  class="w-16 h-16 mx-auto mb-4"
+                />
+                <div>
+                  <h2 class="text-3xl lg:text-4xl font-bold mb-2">500k+</h2>
+                  <p class="text-lg opacity-60">Registered User</p>
+                </div>
+              </div>
+              <!-- Second -->
+              <div
+                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+              >
+                <img
+                  src="./assets/icons/tabler-icon-ticket.svg"
+                  alt=""
+                  class="w-16 h-16 mx-auto mb-4"
+                />
+                <div>
+                  <h2 class="text-3xl lg:text-4xl font-bold mb-2">1.7 lacks</h2>
+                  <p class="text-lg opacity-60">Tickets sold</p>
+                </div>
+              </div>
+              <!-- Third -->
+              <div
+                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+              >
+                <img
+                  src="./assets/icons/stoppage.svg"
+                  alt=""
+                  class="w-16 h-16 mx-auto mb-4"
+                />
+                <div>
+                  <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
+                  <p class="text-lg opacity-60">Transport Partners</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Cards mobile -->
+      <div
+        class="gap-6 items-center justify-center relative -bottom-20 flex lg:hidden xl:hidden 2xl:hidden -mt-8"
+      >
+        <div class="flex flex-col gap-6 justify-center items-center">
+          <div
+            class="flex flex-col md:flex-row gap-6 justify-center items-center"
+          >
+            <!-- First -->
+            <div
+              class="card bg-base-100 text-center px-10 md:px-8 py-9 border-4 border-primaryColor rounded-3xl flex items-center justify-center flex-row gap-8"
+            >
+              <img
+                src="./assets/icons/people.svg"
+                alt=""
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="flex flex-col justify-start items-start">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-2">500k+</h2>
+                <p class="text-lg opacity-60">Registered User</p>
+              </div>
+            </div>
+            <!-- Second -->
+            <div
+              class="card bg-base-100 text-center px-10 md:px-8 py-9 border-b-4 border-primaryColor rounded-3xl border-4 flex items-center justify-center flex-row gap-8"
+            >
+              <img
+                src="./assets/icons/tabler-icon-ticket.svg"
+                alt=""
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="flex flex-col justify-start items-start">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-2">1.7 lacks</h2>
+                <p class="text-lg opacity-60">Tickets sold</p>
+              </div>
+            </div>
+          </div>
+          <!-- Third -->
+          
+          <div
+            class="card bg-base-100 text-center px-8  py-9 border-b-4 border-primaryColor border-4 rounded-3xl flex items-center justify-center flex-row gap-8"
+          >
+            <img
+              src="./assets/icons/stoppage.svg"
+              alt=""
+              class="w-16 h-16 mx-auto mb-4"
+            />
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
+              <p class="text-lg opacity-60">Transport Partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>

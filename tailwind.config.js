@@ -6,11 +6,13 @@ module.exports = {
       comicNeue: "Comic Neue",
       inter: "Inter",
     },
-    colors: {
-      primaryColor: "#22bbcc",
-      dark: "#030712",
+
+    extend: {
+      colors: {
+        primaryColor: "#22bbcc",
+        dark: "#030712",
+      },
     },
-    extend: {},
   },
   plugins: [require("daisyui")],
 };
