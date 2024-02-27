@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Touraria</title>
   </head>
-  <body class="container mx-auto">
+  <body class="container mx-auto font-inter text-dark">
     <header class="mx-2">
       <!-- NavBar -->
       <nav class="font-comicNeue">
@@ -43,7 +43,8 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-medium text-center"
+            <a
+              class="btn btn-ghost text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-medium text-center"
               >Touraria</a
             >
           </div>
@@ -83,11 +84,15 @@
             class="pt-20 pb-36 mt-7 flex flex-col items-center justify-center"
           >
             <div class="text-white pb-10">
-              <h1 class="mb-5 text-3xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-medium font-comicNeue">
+              <h1
+                class="mb-5 text-3xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-medium font-comicNeue"
+              >
                 Seamless Travel Experience with<br />
                 <span class="text-primaryColor">Touraria</span>
               </h1>
-              <p class="md:text-lg lg:text-lg 2xl:text-lg xl:text-lg text-base  max-w-xs  md:max-w-2xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl mx-auto">
+              <p
+                class="md:text-lg lg:text-lg 2xl:text-lg xl:text-lg text-base max-w-xs md:max-w-2xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl mx-auto"
+              >
                 Discover limitless destinations with Touraria, your premier
                 e-ticketing platform for hassle-free journeys worldwide.
               </p>
@@ -173,7 +178,7 @@
             </div>
             <!-- Second -->
             <div
-              class="card bg-base-100 text-center px-10 md:px-8 py-9 border-b-4 border-primaryColor rounded-3xl border-4 flex items-center justify-center flex-row gap-8"
+              class="card bg-base-100 text-center px-10 py-12 md:px-8 md:py-9 border-b-4 border-primaryColor rounded-3xl border-4 flex items-center justify-center flex-row gap-8"
             >
               <img
                 src="./assets/icons/tabler-icon-ticket.svg"
@@ -187,9 +192,9 @@
             </div>
           </div>
           <!-- Third -->
-          
+
           <div
-            class="card bg-base-100 text-center px-8  py-9 border-b-4 border-primaryColor border-4 rounded-3xl flex items-center justify-center flex-row gap-8"
+            class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor border-4 rounded-3xl flex items-center justify-center flex-row gap-8"
           >
             <img
               src="./assets/icons/stoppage.svg"
@@ -204,7 +209,43 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main class="mx-2">
+      <!-- Coupons Section -->
+      <section class="mt-36 flex flex-col justify-center items-center mb-28">
+        <h1 class="text-4xl font-bold text-center font-comicNeue mb-10">
+          Best offers for you
+        </h1>
+        <div class="flex  flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-center gap-6 mb-16">
+          <!-- First Coupon -->
+          <div class="bg-[#FFBF0F] flex justify-center items-center rounded-3xl">
+            <div class="pl-4 md:p-12 lg:p-8 xl:p-12 2xl:p-12">
+              <h1 class="font-black text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">15% OFF</h1>
+              <p class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">on your next purchase</p>
+              <p class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50">use by April 2024</p>
+            </div>
+            <img src="./assets/icons/coupon-divider.svg" alt="coupon-divider" />
+            <div class="font-comicNeue pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center">
+              <h1 class="font-bold text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">NEW15</h1>
+              <p class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40">Coupon Code</p>
+            </div>
+          </div>
+          <!-- Second Coupon -->
+          <div class="bg-[#F78C9C] flex justify-center items-center text-right lg:text-left xl:text-left 2xl:xl:text-left flex-row-reverse lg:flex-row xl:flex-row 2xl:flex-row rounded-3xl">
+            <div class="pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12">
+              <h1 class="font-black text-xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">20% OFF</h1>
+              <p class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">on your next purchase</p>
+              <p class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50">use by April 2024</p>
+            </div>
+            <img src="./assets/icons/coupon-divider.svg" alt="coupon-divider" />
+            <div class="font-comicNeue pl-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center">
+              <h1 class="font-bold text-xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl">Couple 20</h1>
+              <p class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline btn-info text-primaryColor font-comicNeue text-xl font-bold text-center ">See All Offers</button>
+      </section>
+    </main>
     <footer></footer>
     <!-- Scripts -->
     <script src="./assets/scripts/main.js"></script>
