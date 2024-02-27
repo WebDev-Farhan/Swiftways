@@ -7,7 +7,7 @@ module.exports = {
       inter: "Inter",
     },
     colors: {
-      primary: "#22bbcc",
+      primaryColor: "#22bbcc",
       dark: "#030712",
     },
     extend: {},
