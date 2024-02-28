@@ -4,249 +4,902 @@
     <!-- HTML Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Farhan Sadiq" />
+    <meta
+      name="description"
+      content="Discover limitless destinations with Touraria, your premier e-ticketing platform for hassle-free journeys worldwide."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://touraria.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Touraria" />
+    <meta
+      property="og:description"
+      content="Discover limitless destinations with Touraria, your premier e-ticketing platform for hassle-free journeys worldwide."
+    />
+    <meta
+      property="og:image"
+      content="https://touraria.netlify.app/assets/img/pic.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="touraria.netlify.app" />
+    <meta property="twitter:url" content="https://touraria.netlify.app/" />
+    <meta name="twitter:title" content="Touraria" />
+    <meta
+      name="twitter:description"
+      content="Discover limitless destinations with Touraria, your premier e-ticketing platform for hassle-free journeys worldwide."
+    />
+    <meta
+      name="twitter:image"
+      content="https://touraria.netlify.app/assets/img/pic.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Touraria</title>
   </head>
-  <body class="container mx-auto font-inter text-dark">
-    <header class="mx-2">
-      <!-- NavBar -->
-      <nav class="font-comicNeue">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+  <body class="mx-auto font-inter text-dark">
+    <header class="container mx-auto">
+      <div class="mx-2">
+        <!-- NavBar -->
+        <nav class="font-comicNeue">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-normal opacity-70 text-center"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                  <li><a href="">Home</a></li>
+                  <li>
+                    <a>About</a>
+                  </li>
+                  <li><a href="#available-routes">Destination</a></li>
+                  <li><a href="#available-routes">Search</a></li>
+                </ul>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-normal opacity-70 text-center"
+              <a
+                class="btn btn-ghost text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-primaryColor font-medium text-center"
+                href=""
+                >Touraria</a
               >
-                <li><a>Home</a></li>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul
+                class="menu menu-horizontal px-1 text-lg font-normal opacity-70 text-center"
+              >
+                <li><a href="">Home</a></li>
                 <li>
                   <a>About</a>
                 </li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
+                <li><a href="#available-routes">Destination</a></li>
+                <li><a href="#available-routes">Search</a></li>
               </ul>
             </div>
-            <a
-              class="btn btn-ghost text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-medium text-center"
-              >Touraria</a
-            >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul
-              class="menu menu-horizontal px-1 text-lg font-normal opacity-70 text-center"
-            >
-              <li><a>Home</a></li>
-              <li>
-                <a>About</a>
-              </li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <a
-              class="btn bg-[#22bbcc1a] text-primaryColor text-lg font-bold text-center"
-              >Bus <img src="./assets/icons/bus-icon.svg" alt="bus"
-            /></a>
-          </div>
-        </div>
-      </nav>
-      <!-- Banner -->
-      <section
-        class="banner text-center rounded-3xl font-inter"
-        style="
-          background-image: url('./assets/img/banner.png');
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-        "
-      >
-        <!-- Banner contents -->
-        <div class="flex flex-col items-center justify-center">
-          <div
-            class="pt-20 pb-36 mt-7 flex flex-col items-center justify-center"
-          >
-            <div class="text-white pb-10">
-              <h1
-                class="mb-5 text-3xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-medium font-comicNeue"
-              >
-                Seamless Travel Experience with<br />
-                <span class="text-primaryColor">Touraria</span>
-              </h1>
-              <p
-                class="md:text-lg lg:text-lg 2xl:text-lg xl:text-lg text-base max-w-xs md:max-w-2xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl mx-auto"
-              >
-                Discover limitless destinations with Touraria, your premier
-                e-ticketing platform for hassle-free journeys worldwide.
-              </p>
+            <div class="navbar-end">
+              <a
+                href="#available-routes"
+                class="btn bg-[#22bbcc1a] text-primaryColor text-lg font-bold text-center"
+                >Bus <img src="./assets/icons/bus-icon.svg" alt="bus"
+              /></a>
             </div>
-            <button
-              class="btn font-comicNeue text-xl rounded-xl px-7 font-bold text-dark bg-primaryColor border-none"
-            >
-              Buy Tickets
-            </button>
           </div>
-          <!-- Banner Cards -->
-          <div
-            class="gap-6 items-center justify-center relative -bottom-20 hidden lg:flex xl:flex 2xl:flex"
-          >
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        </nav>
+        <!-- Banner -->
+        <section
+          class="banner text-center rounded-3xl font-inter"
+          style="
+            background-image: url('./assets/img/banner.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+          "
+        >
+          <!-- Banner contents -->
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="pt-20 pb-36 mt-7 flex flex-col items-center justify-center"
+            >
+              <div class="text-white pb-10">
+                <h1
+                  class="mb-5 text-3xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-medium font-comicNeue"
+                >
+                  Seamless Travel Experience with<br />
+                  <span class="text-primaryColor">Touraria</span>
+                </h1>
+                <p
+                  class="md:text-lg lg:text-lg 2xl:text-lg xl:text-lg text-base max-w-xs md:max-w-2xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl mx-auto"
+                >
+                  Discover limitless destinations with Touraria, your premier
+                  e-ticketing platform for hassle-free journeys worldwide.
+                </p>
+              </div>
+              <a
+                class="btn font-comicNeue text-xl rounded-xl px-7 font-bold text-dark bg-primaryColor border-none"
+                href="#available-routes"
+              >
+                Buy Tickets
+              </a>
+            </div>
+            <!-- Banner Cards -->
+            <div
+              class="gap-6 items-center justify-center relative -bottom-20 hidden lg:flex xl:flex 2xl:flex"
+            >
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- First -->
+                <div
+                  class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+                >
+                  <img
+                    src="./assets/icons/people.svg"
+                    alt=""
+                    class="w-16 h-16 mx-auto mb-4"
+                  />
+                  <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">500k+</h2>
+                    <p class="text-lg opacity-60">Registered User</p>
+                  </div>
+                </div>
+                <!-- Second -->
+                <div
+                  class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+                >
+                  <img
+                    src="./assets/icons/tabler-icon-ticket.svg"
+                    alt=""
+                    class="w-16 h-16 mx-auto mb-4"
+                  />
+                  <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">
+                      1.7 lacks
+                    </h2>
+                    <p class="text-lg opacity-60">Tickets sold</p>
+                  </div>
+                </div>
+                <!-- Third -->
+                <div
+                  class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+                >
+                  <img
+                    src="./assets/icons/stoppage.svg"
+                    alt=""
+                    class="w-16 h-16 mx-auto mb-4"
+                  />
+                  <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
+                    <p class="text-lg opacity-60">Transport Partners</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Banner Cards for mobile -->
+        <div
+          class="gap-6 items-center justify-center relative -bottom-20 flex lg:hidden xl:hidden 2xl:hidden -mt-8"
+        >
+          <div class="flex flex-col gap-6 justify-center items-center">
+            <div
+              class="flex flex-col md:flex-row gap-6 justify-center items-center"
+            >
               <!-- First -->
               <div
-                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+                class="card bg-base-100 text-center px-10 md:px-8 py-9 border-4 border-primaryColor rounded-3xl flex items-center justify-center flex-row gap-8"
               >
                 <img
                   src="./assets/icons/people.svg"
                   alt=""
                   class="w-16 h-16 mx-auto mb-4"
                 />
-                <div>
+                <div class="flex flex-col justify-start items-start">
                   <h2 class="text-3xl lg:text-4xl font-bold mb-2">500k+</h2>
                   <p class="text-lg opacity-60">Registered User</p>
                 </div>
               </div>
               <!-- Second -->
               <div
-                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
+                class="card bg-base-100 text-center px-10 py-12 md:px-8 md:py-9 border-b-4 border-primaryColor rounded-3xl border-4 flex items-center justify-center flex-row gap-8"
               >
                 <img
                   src="./assets/icons/tabler-icon-ticket.svg"
                   alt=""
                   class="w-16 h-16 mx-auto mb-4"
                 />
-                <div>
+                <div class="flex flex-col justify-start items-start">
                   <h2 class="text-3xl lg:text-4xl font-bold mb-2">1.7 lacks</h2>
                   <p class="text-lg opacity-60">Tickets sold</p>
                 </div>
               </div>
-              <!-- Third -->
-              <div
-                class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor rounded-3xl md:flex lg:flex xl:flex 2xl:flex md:items-center lg:items-center xl:items-center 2xl:items-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center md:flex-row lg:flex-row xl:flex-row 2xl:flex-row"
-              >
-                <img
-                  src="./assets/icons/stoppage.svg"
-                  alt=""
-                  class="w-16 h-16 mx-auto mb-4"
-                />
-                <div>
-                  <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
-                  <p class="text-lg opacity-60">Transport Partners</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- Banner Cards for mobile -->
-      <div
-        class="gap-6 items-center justify-center relative -bottom-20 flex lg:hidden xl:hidden 2xl:hidden -mt-8"
-      >
-        <div class="flex flex-col gap-6 justify-center items-center">
-          <div
-            class="flex flex-col md:flex-row gap-6 justify-center items-center"
-          >
-            <!-- First -->
-            <div
-              class="card bg-base-100 text-center px-10 md:px-8 py-9 border-4 border-primaryColor rounded-3xl flex items-center justify-center flex-row gap-8"
-            >
-              <img
-                src="./assets/icons/people.svg"
-                alt=""
-                class="w-16 h-16 mx-auto mb-4"
-              />
-              <div class="flex flex-col justify-start items-start">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-2">500k+</h2>
-                <p class="text-lg opacity-60">Registered User</p>
-              </div>
-            </div>
-            <!-- Second -->
-            <div
-              class="card bg-base-100 text-center px-10 py-12 md:px-8 md:py-9 border-b-4 border-primaryColor rounded-3xl border-4 flex items-center justify-center flex-row gap-8"
-            >
-              <img
-                src="./assets/icons/tabler-icon-ticket.svg"
-                alt=""
-                class="w-16 h-16 mx-auto mb-4"
-              />
-              <div class="flex flex-col justify-start items-start">
-                <h2 class="text-3xl lg:text-4xl font-bold mb-2">1.7 lacks</h2>
-                <p class="text-lg opacity-60">Tickets sold</p>
-              </div>
-            </div>
-          </div>
-          <!-- Third -->
+            <!-- Third -->
 
-          <div
-            class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor border-4 rounded-3xl flex items-center justify-center flex-row gap-8"
-          >
-            <img
-              src="./assets/icons/stoppage.svg"
-              alt=""
-              class="w-16 h-16 mx-auto mb-4"
-            />
-            <div class="flex flex-col justify-start items-start">
-              <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
-              <p class="text-lg opacity-60">Transport Partners</p>
+            <div
+              class="card bg-base-100 text-center px-8 py-9 border-b-4 border-primaryColor border-4 rounded-3xl flex items-center justify-center flex-row gap-8"
+            >
+              <img
+                src="./assets/icons/stoppage.svg"
+                alt=""
+                class="w-16 h-16 mx-auto mb-4"
+              />
+              <div class="flex flex-col justify-start items-start">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-2">80+</h2>
+                <p class="text-lg opacity-60">Transport Partners</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="mx-2">
+    <main>
       <!-- Coupons Section -->
-      <section class="mt-36 flex flex-col justify-center items-center mb-28">
-        <h1 class="text-4xl font-bold text-center font-comicNeue mb-10">
-          Best offers for you
-        </h1>
-        <div class="flex  flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-center gap-6 mb-16">
-          <!-- First Coupon -->
-          <div class="bg-[#FFBF0F] flex justify-center items-center rounded-3xl">
-            <div class="pl-4 md:p-12 lg:p-8 xl:p-12 2xl:p-12">
-              <h1 class="font-black text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">15% OFF</h1>
-              <p class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">on your next purchase</p>
-              <p class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50">use by April 2024</p>
+      <section class="container mx-auto">
+        <div
+          class="mx-2 mb-16 mt-36 flex flex-col justify-center items-center lg:mb-28 xl:mb-28 2xl:mb-28"
+        >
+          <h1 class="text-4xl font-bold text-center font-comicNeue mb-10">
+            Best offers for you
+          </h1>
+          <div
+            class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-center gap-6 mb-16"
+          >
+            <!-- First Coupon -->
+            <div
+              class="bg-[#FFBF0F] flex justify-center items-center rounded-3xl"
+            >
+              <div class="pl-4 md:p-12 lg:p-8 xl:p-12 2xl:p-12">
+                <h1
+                  class="font-black text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl"
+                >
+                  15% OFF
+                </h1>
+                <p
+                  class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl"
+                >
+                  on your next purchase
+                </p>
+                <p
+                  class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50"
+                >
+                  use by April 2024
+                </p>
+              </div>
+              <img
+                src="./assets/icons/coupon-divider.svg"
+                alt="coupon-divider"
+              />
+              <div
+                class="font-comicNeue pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center"
+              >
+                <h1
+                  class="font-bold text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl"
+                >
+                  NEW15
+                </h1>
+                <p
+                  class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40"
+                >
+                  Coupon Code
+                </p>
+              </div>
             </div>
-            <img src="./assets/icons/coupon-divider.svg" alt="coupon-divider" />
-            <div class="font-comicNeue pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center">
-              <h1 class="font-bold text-2xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">NEW15</h1>
-              <p class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40">Coupon Code</p>
+            <!-- Second Coupon -->
+            <div
+              class="bg-[#F78C9C] flex justify-center items-center text-right lg:text-left xl:text-left 2xl:xl:text-left flex-row-reverse lg:flex-row xl:flex-row 2xl:flex-row rounded-3xl"
+            >
+              <div class="pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12">
+                <h1
+                  class="font-black text-xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl"
+                >
+                  20% OFF
+                </h1>
+                <p
+                  class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl"
+                >
+                  on your next purchase
+                </p>
+                <p
+                  class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50"
+                >
+                  use by April 2024
+                </p>
+              </div>
+              <img
+                src="./assets/icons/coupon-divider.svg"
+                alt="coupon-divider"
+              />
+              <div
+                class="font-comicNeue pl-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center"
+              >
+                <h1
+                  class="font-bold text-xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl"
+                >
+                  Couple 20
+                </h1>
+                <p
+                  class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40"
+                >
+                  Coupon Code
+                </p>
+              </div>
             </div>
           </div>
-          <!-- Second Coupon -->
-          <div class="bg-[#F78C9C] flex justify-center items-center text-right lg:text-left xl:text-left 2xl:xl:text-left flex-row-reverse lg:flex-row xl:flex-row 2xl:flex-row rounded-3xl">
-            <div class="pr-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12">
-              <h1 class="font-black text-xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl">20% OFF</h1>
-              <p class="font-semibold text-lg md:text-xl lg:text-xl xl:text-xl 2xl:text-xl">on your next purchase</p>
-              <p class="font-medium text-base md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-50">use by April 2024</p>
+          <button
+            class="btn btn-outline btn-info text-primaryColor font-comicNeue text-xl font-bold text-center"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+      <!-- Tickets Section Starts -->
+      <section
+        class="bg-[#F7F8F8] border-t-2 border-primaryColor rounded-t-[4rem] md:rounded-t-[6rem] lg:rounded-t-[15rem] xl::rounded-t-[15rem] 2xl:rounded-t-[15rem] max-w-full mx-auto"
+        id="available-routes"
+      >
+        <div class="mx-2">
+          <div class="mx-auto container pb-16 lg:pb-32 xl:pb-32 2xl:pb-32">
+            <!-- Ticket Section Content -->
+            <div
+              class="text-center flex flex-col items-center justify-center mt-16 lg:mt-28 xl:mt-32 2xl:mt-32 pb-12"
+            >
+              <h1 class="font-comicNeue text-4xl font-bold">Explore Routes</h1>
+              <p
+                class="text-lg max-w-sm md:max-w-md lg:max-w-2xl xl:max-w-2xl 2xl:max-w-2xl opacity-60 pt-4"
+              >
+                Discover your next adventure! Search and compare available buses
+                for your desired route and date. Find the perfect fit for your
+                travel needs.
+              </p>
             </div>
-            <img src="./assets/icons/coupon-divider.svg" alt="coupon-divider" />
-            <div class="font-comicNeue pl-3 md:p-12 lg:p-12 xl:p-12 2xl:p-12 text-center">
-              <h1 class="font-bold text-xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl">Couple 20</h1>
-              <p class="text-base md:text-xl lg:text-xl xl:text-xl 2xl:text-xl opacity-40">Coupon Code</p>
+            <!-- Bus info -->
+            <div
+              class="bg-white rounded-3xl flex flex-col lg:flex-row xl:flex-row 2xl:flex-row items-center justify-center md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl mx-auto mb-6"
+            >
+              <!-- Left Part -->
+              <div class="p-6 md:p-8 lg:p-8 xl:p-8 2xl:p-8">
+                <!-- Top Left Part -->
+                <div class="flex flex-wrap justify-between items-center mb-8">
+                  <div>
+                    <div
+                      class="flex gap-4 pb-4 md:pb-4 lg:pb-0 xl:pb-0 2xl:pb-0 justify-center items-center"
+                    >
+                      <img src="./assets/icons/bus-logo.svg" alt="bus" />
+                      <div>
+                        <h1
+                          class="text-xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-comicNeue font-bold"
+                        >
+                          Econo service
+                        </h1>
+                        <p
+                          class="md:text-lg lg:text-lg xl:text-lg 2xl:text-lg opacity-60"
+                        >
+                          901-SML-NIL | NON_AC
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <button
+                      class="btn no-animation bg-[#22bbcc26] text-primaryColor"
+                    >
+                      <img src="./assets/icons/seat-green.svg" alt="" /><span
+                        id="available-seats"
+                        >40</span
+                      >seats available
+                    </button>
+                  </div>
+                </div>
+                <!-- Bottom Left -->
+                <div
+                  class="bg-[#F7F8F8] font-comicNeue text-lg rounded-3xl p-6 md:p-8 lg:p-8 xl:p-8 2xl:p-8"
+                >
+                  <div class="flex items-center justify-between">
+                    <p class="opacity-60">Route</p>
+                    <p>Dhaka-Lakshmipur</p>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="flex items-center justify-between">
+                    <p class="opacity-60">Departure Time</p>
+                    <p>11:15 PM</p>
+                  </div>
+                  <div class="divider"></div>
+                  <div
+                    class="flex items-center flex-wrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap justify-center text-base gap-6"
+                  >
+                    <button class="btn no-animation bg-[#0307120D] px-4">
+                      Boarding Point - Kachukhet</button
+                    ><button class="btn no-animation bg-[#0307120D]">
+                      Dropping Point - Lakshmipur</button
+                    ><button class="btn no-animation bg-[#0307120D]">
+                      Est. Time- 4 Hours
+                    </button>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+              <!-- divider -->
+              <img
+                class="hidden lg:flex xl:flex 2xl:flex"
+                src="./assets/icons/info-divider.svg"
+                alt=""
+              />
+              <!-- right Part -->
+              <div
+                class="font-comicNeue text-center flex flex-col items-center justify-center p-6 lg:p-0 xl:p-0 2xl:p-0"
+              >
+                <img src="./assets/icons/fare.svg" alt="fare" />
+                <h1 class="font-bold text-3xl">550 Taka</h1>
+                <p class="text-2xl opacity-60">Per Seat</p>
+              </div>
+            </div>
+            <!-- Seats -->
+            <div
+              class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row items-center max-w-6xl mx-auto justify-center bg-white rounded-3xl p-4 md:p-8 lg:p-8 xl:p-8 2xl:p-8"
+            >
+              <!-- Left Part -->
+              <div
+                class="pb-6 lg:p-0 xl:p-0 2xl:p-0 flex flex-col justify-center items-center"
+              >
+                <!-- Top Left -->
+                <div class="flex flex-col justify-center gap-4 mb-6">
+                  <div class="flex justify-start text-left">
+                    <h1 class="font-comicNeue text-2xl">Select Your Seats</h1>
+                  </div>
+                  <div class="divider"></div>
+                  <div
+                    class="flex justify-between min-w-72 lg:justify-between xl:justify-between 2xl:justify-between items-center md:gap-36"
+                  >
+                    <div class="flex justify-center items-center">
+                      <img src="./assets/icons/seat-gray.svg" alt="" />
+                      <h1 class="text-[#03071280] text-lg">Available</h1>
+                    </div>
+                    <div class="flex justify-center items-center">
+                      <img src="./assets/icons/seat-green-fill.svg" alt="" />
+                      <h1 class="text-primaryColor text-lg">Selected</h1>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="flex justify-end items-center">
+                    <div
+                      class="bg-[#0307121A] w-16 md:w-28 lg:w-28 xl:w-28 2xl:w-28 rounded-xl py-3 flex justify-center items-center"
+                    >
+                      <img src="./assets/icons/steering-wheel.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Bottom Left -->
+                <div
+                  class="text-lg font-medium text-[#03071280] flex items-center justify-between gap-10 md:gap-16 lg:gap-24 xl:gap-24 2xl:gap-24"
+                >
+                  <div
+                    class="flex gap-3 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 items-center justify-center"
+                  >
+                    <div class="flex flex-col gap-12 justify-center">
+                      <p>A</p>
+                      <p>B</p>
+                      <p>C</p>
+                      <p>D</p>
+                      <p>E</p>
+                      <p>F</p>
+                      <p>G</p>
+                      <p>H</p>
+                      <p>I</p>
+                      <p>J</p>
+                    </div>
+                    <div
+                      class="flex flex-col gap-7 items-center justify-center"
+                    >
+                      <button
+                        id="A1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        A1</button
+                      ><button
+                        id="B1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        B1</button
+                      ><button
+                        id="C1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        C1</button
+                      ><button
+                        id="D1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        D1</button
+                      ><button
+                        id="E1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        E1</button
+                      ><button
+                        id="F1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        F1</button
+                      ><button
+                        id="G1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        G1</button
+                      ><button
+                        id="H1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        H1</button
+                      ><button
+                        id="I1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        I1</button
+                      ><button
+                        id="J1"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        J1
+                      </button>
+                    </div>
+                    <div
+                      class="flex flex-col gap-7 items-center justify-center"
+                    >
+                      <button
+                        id="A2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        A2</button
+                      ><button
+                        id="B2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        B2</button
+                      ><button
+                        id="C2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        C2</button
+                      ><button
+                        id="D2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        D2</button
+                      ><button
+                        id="E2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        E2</button
+                      ><button
+                        id="F2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        F2</button
+                      ><button
+                        id="G2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        G2</button
+                      ><button
+                        id="H2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        H2</button
+                      ><button
+                        id="I2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        I2</button
+                      ><button
+                        id="J2"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        J2
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-3 md:gap-6 lg:gap-6 xl:gap-6 2xl:gap-6 items-center justify-center"
+                  >
+                    <div
+                      class="flex flex-col gap-7 items-center justify-center"
+                    >
+                      <button
+                        id="A3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        A3</button
+                      ><button
+                        id="B3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        B3</button
+                      ><button
+                        id="C3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        C3</button
+                      ><button
+                        id="D3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        D3</button
+                      ><button
+                        id="E3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        E3</button
+                      ><button
+                        id="F3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        F3</button
+                      ><button
+                        id="G3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        G3</button
+                      ><button
+                        id="H3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        H3</button
+                      ><button
+                        id="I3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        I3</button
+                      ><button
+                        id="J3"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        J3
+                      </button>
+                    </div>
+                    <div
+                      class="flex flex-col gap-7 items-center justify-center"
+                    >
+                      <button
+                        id="A4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        A4</button
+                      ><button
+                        id="B4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        B4</button
+                      ><button
+                        id="C4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        C4</button
+                      ><button
+                        id="D4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        D4</button
+                      ><button
+                        id="E4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        E4</button
+                      ><button
+                        id="F4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        F4</button
+                      ><button
+                        id="G4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        G4</button
+                      ><button
+                        id="H4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        H4</button
+                      ><button
+                        id="I4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        I4</button
+                      ><button
+                        id="J4"
+                        class="btn seat-button w-12 md:w-28 lg:w-28 xl:w-28 2xl:w-28"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Divider -->
+              <div
+                class="divider lg:divider-horizontal xl:divider-horizontal 2xl:divider-horizontal divider-[#0307124D]"
+              ></div>
+              <!-- Right Part -->
+              <div class="flex flex-col justify-center items-center">
+                <div class="flex justify-start text-left">
+                  <h1 class="font-comicNeue text-2xl">Fill Up Your Infos</h1>
+                </div>
+                <div class="divider w-full mb-6"></div>
+                <!-- Seat Price -->
+                <div
+                  class="bg-[#F7F8F8] p-4 md:p-8 lg:p-8 xl:p-8 2xl:p-8 rounded-xl mb-6"
+                >
+                  <div class="font-medium flex items-center justify-between">
+                    <h1>
+                      Seat
+                      <sup
+                        id="selected-seat-number"
+                        class="bg-primaryColor text-white text-xs px-1 rounded-full"
+                        >2</sup
+                      >
+                    </h1>
+                    <h1>Class</h1>
+                    <h1>Price</h1>
+                  </div>
+                  <div id="price-area" class="divider w-full mb-4"></div>
+                  <div
+                    class="text-[#03071299] flex items-center justify-between mb-4"
+                  >
+                    <h1>C2</h1>
+                    <h1>Economy</h1>
+                    <h1>550</h1>
+                  </div>
+                  <div
+                    class="text-[#03071299] flex items-center justify-between mb-4"
+                  >
+                    <h1>D2</h1>
+                    <h1>Economy</h1>
+                    <h1>550</h1>
+                  </div>
+                  <div class="divider w-full mb-4"></div>
+                  <div class="font-medium flex items-center justify-between">
+                    <h1>Total</h1>
+                    <h1>BDT <span id="total-price">1100</span></h1>
+                  </div>
+                  <label
+                    class="input mb-6 h-14 bg-white flex items-center justify-between"
+                  >
+                    <input
+                      id="coupon-input"
+                      type="text"
+                      class="grow text-sm text-[#03071266]"
+                      placeholder="Have any coupon?"
+                    />
+                    <button
+                      id="apply-coupon"
+                      class="btn bg-primaryColor font-semibold text-white hover:text-dark my-2 py-1 -mr-2"
+                    >
+                      Apply
+                    </button>
+                  </label>
+                  <div class="font-medium flex items-center justify-between">
+                    <h1>Grand Total</h1>
+                    <h1>BDT <span id="grand-total-price">1100</span></h1>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <div class="text-left">
+                    <!-- Name -->
+                    <h1 class="font-semibold mb-4">Passenger Name*</h1>
+                    <input
+                      required
+                      type="text"
+                      placeholder="Enter your name"
+                      class="input w-80 input-bordered"
+                    />
+                  </div>
+                </div>
+                <!-- Phone number -->
+                <div class="mb-6">
+                  <div class="text-left">
+                    <h1 class="font-semibold mb-4">Phone Number*</h1>
+                    <input
+                      required
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      class="input w-80 input-bordered"
+                    />
+                  </div>
+                </div>
+                <!-- Email -->
+                <div class="mb-6">
+                  <div class="text-left">
+                    <h1 class="font-semibold mb-4">Email ID</h1>
+                    <input
+                      type="email"
+                      placeholder="Enter your email id"
+                      class="input w-80 input-bordered"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="btn bg-primaryColor mb-5 w-80 text-white hover:text-dark"
+                >
+                  Next
+                </button>
+                <div
+                  class="opacity-60 flex items-center w-80 justify-between text-sm"
+                >
+                  <a href="#" class="underline">Terms and Conditions</a>
+                  <a href="#" class="underline">Cancellation Policy</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="btn btn-outline btn-info text-primaryColor font-comicNeue text-xl font-bold text-center ">See All Offers</button>
       </section>
     </main>
-    <footer></footer>
+    <footer
+      class="py-16 md:py-20 lg:py-32 xl:py-32 2xl:py-32 px-16 md:px-20 lg:px-36 xl:px-36 2xl:px-36 bg-dark text-neutral-content"
+    >
+      <div class="footer mx-auto"></div>
+      <div
+        class="pb-12 border-b-2 border-[#FFFFFF4D] border-dashed flex flex-col lg:flex-row xl:flex-row 2xl:flex-row items-center justify-center lg:justify-between xl:justify-between 2xl:justify-between"
+      >
+        <div class="text-center">
+          <h1 class="font-comicNeue pb-3 lg:pb-0 xl:pb-0 2xl:pb-0 text-4xl">
+            Touraria
+          </h1>
+          <p class="max-w-sm pb-3 lg:pb-0 xl:pb-0 2xl:pb-0">
+            Discover limitless destinations with Touraria, your premier
+            e-ticketing platform for hassle-free journeys worldwide.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="font-comicNeue text-xl">Download Our App</h1>
+          <a
+            href="https://play.google.com/store/apps"
+            target="_blank"
+            class="flex gap-2 items-center justify-center border-2 rounded-xl p-2 mt-4"
+          >
+            <img src="./assets/img/playstore.png" alt="" />
+            <div class="flex flex-col items-start justify-center">
+              <p>Get it on</p>
+              <h1 class="font-comicNeue text-2xl">Google Play</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="mt-8 flex flex-col-reverse xl:flex-row 2xl:flex-row items-center justify-between"
+      >
+        <h1 class="opacity-70 text-center">
+          &copy; All rights reserved, Touraria Limited. 2024
+        </h1>
+        <div
+          class="font-medium gap-8 flex flex-col xl:flex-row 2xl:flex-row items-center justify-between pb-3 xl:pb-0 2xl:pb-0"
+        >
+          <a href="#" target="_blank">Return & Refund Policy</a>
+          <a href="#" target="_blank">Terms and Conditions</a>
+          <a href="#" target="_blank">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="./assets/scripts/main.js"></script>
   </body>
